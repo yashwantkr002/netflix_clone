@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{data}}</title>
+    <meta name="description"content="What is Netflix? Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries ..."/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/fiveicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/fiveicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/fiveicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/fiveicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/fiveicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/{{css}}.css">
+    <link rel="stylesheet" media="screen and (max-width:1178px)" href="/static/css/phone.css">
+    <script src="https://kit.fontawesome.com/a495114c24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--Header section start-->
+  <header class="head " >
+    <div class="header"id="head">
+       <nav class="containar nav">
+           <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars" onclick="change()"></i>
+           </label>
+           
+           <div class="left-con">
+          <img src="/static/photos/logo.png" alt="Netflix">
+               <div class="menu">
+                   <ul id="ul"class="ul">
+                      <li><a id="active"href="/">Home</a></li>
+                      <li><a href="/tv/">Tv Shows</a></li>
+                      <li><a href="/movies/">Movies</a></li>
+                      <li><a href="N&P.html">News & Popular</a></li>
+                      <li><a href="mylist.html">My List</a></li>
+                      <li><a href="browByLng.html"> Browse by Language</a></li>
+                   </ul>
+               </div>
+           </div>
+   
+           <div class="right-con">
+               <img src="/static/photos/search.png" alt="search">
+               <img src="/static/photos/notification.png" alt="notification">
+               <img src="/static/photos/user-icon.png" alt="user-icon" onclick="option()">
+               <div id="user-icon">
+                <li><a href="##">account</a></li>
+                <li><a href="##">update</a></li>
+                <li><a href="##">seteing</a></li>
+                <li><a href="/logout/">logout</a></li>
+               </div>
+           </div>
+         </nav>
+    </div>
+
+   </header>
+
+     <!--Header section end-->
+
+     {% block start %}
+
+
+     
+     
+     {% endblock  %}
+     <script src="/static/js/script.js" ></script>
+    </body>
+    </html>

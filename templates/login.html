@@ -1,0 +1,48 @@
+         {% extends 'base.html' %}
+         {% block start %}
+
+
+        <!--Login form start-->
+        
+         <div class="log_div">
+            <div class="massage">
+              {% if messages %}
+              {% for message in messages %}
+              {{ message }}
+              {% endfor %}
+              {% endif %}            
+            </div>
+            <div class="log_mid">
+                <h2>Login form </h2>
+                <form action="" method="POST" onsubmit="return cheak()">
+                    {% csrf_token %}
+                    <input id="username" type="text"name="username"placeholder="username">
+                    <p id="err1"class="error"></p>
+                    <input id="password"type="password" name="password"placeholder="password">
+                    <p id="err2"class="error"></p>
+                    <input id="btn"type="submit"value="Login">
+                </form>
+                <div class="create_by">
+                    <p>don't have an account <a href="/singup/">sing up</a></p>
+                <p><a href="/forget/">forget password</a></p>
+                </div>
+
+                <div class="logby">
+                    <p>or login by</p>
+                  <div class="log_flax">
+                    <a href="FJKFJ.html"><img src="/static/photos/google.png" alt=""></a>
+                <a href="fkfj.html"><img src="/static/photos/facebook.png" alt=""></a>
+                  </div>
+                </div>
+               
+                
+         
+
+            </div>
+         </div>
+
+
+        <!--Login form start-->
+    
+         <script src="/static/js/login.js" ></script>
+         {% endblock  %}

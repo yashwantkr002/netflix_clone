@@ -1,0 +1,50 @@
+    {% extends 'base.html' %}
+       {% block start %}
+
+         <!--Header section end-->
+
+     <!--login section start-->
+         
+         <div class="log_div">
+            <div class="massage">
+                {% if messages %}
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+                {% endif %}
+            </div>
+            <div class="log_mid">
+                <h2>registration form </h2>
+                <form action="" method="POST" onsubmit="return cheak()">
+                    {% csrf_token %}
+                 <div class="first">
+                    <input id="username" type="text"name="username"placeholder="username">
+                    <p id="err1"class="error"></p>
+
+                    <input id="name"type="text" name="name"placeholder="full Name">
+                    <p id="err2"class="error"></p>
+
+                    <input id="email"type="email" name="email"placeholder="Email">
+                    <p id="err3"class="error"></p>
+                 </div>
+
+                   <div class="scond">
+                    <input id="phone"type="phone" name="phone"placeholder="phone">
+                    <p id="err4"class="error"></p>
+
+                    <input id="password"type="password" name="password"placeholder="password">
+                    <p id="err5"class="error"></p>
+
+                    <input id="conf_password"type="password" name="conf_password"placeholder="conform password">
+                    <p id="err6"class="error"></p>
+                   </div>
+
+                 <input id="btn"type="submit"value="Ragister">
+                </form>
+            </div>
+        </div>
+
+                <!--login section end-->
+    
+         <script src="/static/js/regitration.js" ></script>
+         {% endblock  %}

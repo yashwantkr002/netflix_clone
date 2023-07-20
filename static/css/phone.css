@@ -1,0 +1,44 @@
+body{
+    position: relative;
+}
+.checkbtn{
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    right: 6px;
+    line-height: 53px;
+}
+.left-con{
+    width: 100vw;
+}
+
+#ul{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(127, 129, 170);
+    top: 40px;
+    left: 0px;
+    text-align: center;
+    z-index: 10;
+    flex-direction: column;
+    display: none;
+    
+   
+}
+.right-con img{
+    width: 35px;
+    margin-right:3px;
+      
+}
+.right-con{
+    margin-right:30px;
+}
+.option{
+    text-align: center;
+}
+
+
+.h_black{
+    background-color: black;
+}

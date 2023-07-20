@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block start %}
+
+    <!--forget page start-->
+    <div class="fordiv">
+        <div class="massage"></div>
+        <div class="divflax">
+            <h2>forget &nbsp password</h2>
+        
+            <form action=""method="post" onsubmit="return check()">
+                <input id="username" type="text"name="username"placeholder="username">
+                <p id="err1"class="error"></p>
+                <p id="or">or</p>
+                <input id="phone"type="number" name="phone"placeholder="phone number">
+                <p id="err2"class="error"></p>
+                <input id="btn"type="submit"value="search">
+            </form>
+        </div>
+
+
+      </div>
+
+     <!--forget page end-->
+     <script src="/static/js/forget.js" ></script>
+
+{% endblock  %}
